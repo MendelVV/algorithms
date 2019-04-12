@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'ru.mendel.apps', name: 'algorithms', version:'1.0'
+    compile group: 'ru.mendel.apps', name: 'algorithms', version:'1.1'
 }
 ```
 
@@ -30,7 +30,7 @@ dependencies {
     <dependency>
         <groupId>ru.mendel.apps</groupId>
         <artifactId>algorithms</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
     </dependency>
 </dependencies>
 ```
