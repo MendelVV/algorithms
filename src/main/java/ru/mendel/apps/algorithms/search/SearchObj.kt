@@ -1,4 +1,4 @@
-package ru.mendel.apps.algorithms
+package ru.mendel.apps.algorithms.search
 
 class SearchObj<T>(val compare: (o1: T, o2: T) -> Int) {
 

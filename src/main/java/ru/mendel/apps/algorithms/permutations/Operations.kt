@@ -114,8 +114,4 @@ object Operations {
         }
     }
 
-    fun generateAllCycles(n: Int){
-
-    }
-
 }

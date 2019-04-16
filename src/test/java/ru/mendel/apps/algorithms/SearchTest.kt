@@ -1,6 +1,7 @@
 package ru.mendel.apps.algorithms
 
 import org.junit.Test
+import ru.mendel.apps.algorithms.search.SearchObj
 import ru.mendel.apps.algorithms.sort.QuickSortObjects
 import java.util.*
 
@@ -25,7 +26,7 @@ class SearchTest {
         }
 
         val sort = QuickSortObjects(compare)
-        val search = SearchObj (compare)
+        val search = SearchObj(compare)
         val res = sort.sort(array.toTypedArray())
         assert(search.search(res,res[10])==10)
         assert(search.search(res, TestData(1000, "nm"))==-1)
