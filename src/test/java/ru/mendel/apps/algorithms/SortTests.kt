@@ -3,6 +3,7 @@ package ru.mendel.apps.algorithms
 import org.junit.Test
 import ru.mendel.apps.algorithms.sort.QuickSortObjects
 import ru.mendel.apps.algorithms.sort.QuickSortPrimitive
+import ru.mendel.apps.algorithms.strings.EscapeHTML
 import java.util.*
 
 class SortTests {
@@ -12,12 +13,16 @@ class SortTests {
 
         val random = Random()
         val array = mutableListOf<Int>()
-        for (i in 0..20){
+        for (i in 0..100){
             array.add(random.nextInt(1000)-500)
         }
+        val start = System.currentTimeMillis()
+ //       array.sort()//быстрее в разы
         val sort = QuickSortPrimitive()
         val res = sort.sortInt(array.toTypedArray())
         println(Arrays.toString(res))
+        val end = System.currentTimeMillis()-start
+        println("time=$end")
     }
 
     @Test
